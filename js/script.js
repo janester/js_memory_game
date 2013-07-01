@@ -29,6 +29,7 @@ var handle_click = function() {
     }// ends if statement
   if($(".matched").length == $(".tile").length) {
     alert("you found all the matches in "+num_clicks+" clicks!");
+    window.location.href = window.location.href;
   }
 };
 
