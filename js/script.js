@@ -28,12 +28,9 @@ var handle_click = function() {
     ); // ends each loop
     }// ends if statement
   if($(".matched").length == $(".tile").length) {
-    alert("you found all the matches in "+num_clicks+" clicks!");
-    window.location.href = window.location.href;
+    handle_win();
   }
 };
-
-
 
 
 var is_match = function() {
@@ -45,3 +42,8 @@ var is_match = function() {
   // }
   return (selected[0].find("img").attr("src") == selected[1].find("img").attr("src"));
 };
+
+var handle_win = function() {
+  alert("you found all the matches in "+num_clicks+" clicks!");
+  window.location.href = window.location.href;
+}
