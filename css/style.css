@@ -30,3 +30,11 @@ body {
 #board .tile.active img{
   visibility:visible;
 }
+
+#board .tile.matched img {
+  opacity: 0.75;
+  visibility: visible;
+}
+#board .tile.matched {
+  background: none;
+}
