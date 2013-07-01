@@ -3,14 +3,14 @@ body {
 }
 
 #board {
-  width: 400px;
+  width: 800px;
   overflow: hidden;
   margin: 50px auto;
 }
 
 #board .tile, #board .tile img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background: red;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -18,7 +18,15 @@ body {
   float: left;
 }
 
+#board .tile {
+  margin: 20px;
+}
+
 #board .tile img {
   display: block;
   visibility: hidden;
+}
+
+#board .tile.active img{
+  visibility:visible;
 }
